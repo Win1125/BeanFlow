@@ -27,7 +27,7 @@ if ($_SESSION['rol'] == 1 || $_SESSION['rol'] == 2) {
             $nombre = null;
             
             if (!empty($foto['name'])) {
-                $nombre = '../assets/img/platos/' . $fecha . '.jpg';
+                $nombre = '../assets/img/' . $fecha . '.jpg';
             } else if (!empty($foto_actual) && empty($foto['name'])) {
                 $nombre = $foto_actual;
             }
